@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>성경 읽기 도우미</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>성경 읽기 도우미</h1>
+      <p>성경 66권 순서대로 이동하고, 권별로 유튜브 링크를 등록한다.</p>
+    </div>
+    <div class="actions">
+      <input id="search" type="search" placeholder="예: 창세기, 로마서" />
+      <button id="goHome" class="btn" type="button">목록</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- 좌측: 성경 목록 -->
+    <aside class="sidebar">
+      <nav id="bookNav" class="book-nav"></nav>
+    </aside>
+
+    <!-- 우측: 선택한 성경 페이지 -->
+    <section class="content">
+      <div id="page" class="page"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>저장 방식: 브라우저(LocalStorage). PC/브라우저가 바뀌면 등록한 링크는 공유되지 않는다.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
